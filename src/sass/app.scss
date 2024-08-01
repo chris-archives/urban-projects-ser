@@ -1,0 +1,134 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    padding: 5vh 3vw 0px 6.5vw;
+
+    
+    div {
+        width: 40vw;
+        position: absolute
+    }
+
+    h1 {
+        color: #fff;
+        font-family: 'Inter';
+        font-size: 30px;
+    }
+    ul {
+        display: flex;
+        margin-left: 60vw;
+        
+        li a {
+            margin-left: 3vw;
+            font-size: 16px;
+            font-family: "Inter";
+            font-weight: 500;
+            border-bottom: solid 3px transparent;
+            transition: all 0.4s ease;
+            color: #fff;
+        }
+
+        li a:hover {
+            border-bottom: solid 3px #56AE57;
+        }
+    }
+}
+
+#hero {
+    h1 {
+        font-size: 67px;
+        font-family: Inter;
+        line-height: 1.3em;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: left;
+        width: 78vw;
+        position: absolute;
+        top: 200px;
+        left: 12vw;
+    }
+
+    .logo-container {
+        height: 95vh;
+        width: 52vw;
+        z-index: -1;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: #302c2d;
+    }
+
+    .hero-img {
+        height: 95vh;
+        width: 48vw;
+        z-index: -1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        object-fit: cover;
+        opacity: 0.9;
+    }
+
+    .overlay-div {
+        height: 95vh;
+        width: 48vw;
+        z-index: -1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0.7;
+        background-color: #302c2d;
+    }
+}
+
+.banner{
+    height: 230px;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+    top: 95vh;
+
+}
+
+.logos {
+    position: absolute;
+    top: 95vh;
+    overflow: hidden;
+    white-space: nowrap;
+
+
+    .logo-slider {
+        white-space: nowrap;
+        padding: 60px 0;
+        animation: 12s slide infinite linear;
+        display: inline-block;
+        
+        img {
+            height: 100px;
+            z-index: 2;
+            margin-right: 100px;
+        }
+    }
+}
+
+
+
+@keyframes slide {
+    from {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(-100%)
+    }
+}
