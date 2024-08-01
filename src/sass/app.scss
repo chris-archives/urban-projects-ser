@@ -59,7 +59,7 @@ nav {
     }
 
     .logo-container {
-        height: 95vh;
+        height: 670px;
         width: 52vw;
         z-index: -1;
         position: absolute;
@@ -69,7 +69,7 @@ nav {
     }
 
     .hero-img {
-        height: 95vh;
+        height: 670px;
         width: 48vw;
         z-index: -1;
         position: absolute;
@@ -80,7 +80,7 @@ nav {
     }
 
     .overlay-div {
-        height: 95vh;
+        height: 670px;
         width: 48vw;
         z-index: -1;
         position: absolute;
@@ -122,8 +122,6 @@ nav {
     }
 }
 
-
-
 @keyframes slide {
     from {
         transform: translateX(0)
@@ -132,3 +130,193 @@ nav {
         transform: translateX(-100%)
     }
 }
+
+#about-section {
+    h6 {
+        position: absolute;
+        top: 1000px;
+        margin-left: 10vw;
+        white-space: pre-line;
+        text-overflow: clip;
+        font-family: 'Inter';
+        line-height: 1.4em;
+        font-weight: 300;
+        font-size: 13px;
+        text-transform: none;
+        color: rgb(48, 44, 45);
+        text-align: left;
+    }
+
+    h1 {
+        position: absolute;
+        top: 1030px;
+        margin-left: 10vw;
+        white-space: pre-line;
+        text-overflow: clip;
+        font-family: Inter;
+        line-height: 1.3em;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: rgb(48, 44, 45);
+        font-size: 33px;
+        text-align: left;
+    }
+
+    p {
+        position: absolute;
+        top: 1090px;
+        margin-left: 10vw;
+        text-transform: none;
+        white-space: pre-line;
+        font-family: Inter;
+        line-height: 1.4em;
+        font-weight: 300;
+        font-size: 16px;
+        color: rgb(48, 44, 45);
+        width: 70vw;
+    }
+}
+
+#focus-section {
+    .our-focus-div {
+        height: 670px;
+        width: 52vw;
+        z-index: -1;
+        position: absolute;
+        left: 0px;
+        top: 1250px;
+        background-color: #302c2d;
+
+        h6 {
+            margin: 0px 0px 8px;
+            white-space: pre-line;
+            text-overflow: clip;
+            font-family: Inter;
+            line-height: 1.4em;
+            font-weight: 300;
+            font-size: 13px;
+            text-transform: none;
+            color: #fff;
+            text-align: left;
+            margin-left: 5vw;
+            padding-top: 200px;
+            width: 42vw;
+        }
+        
+        h1 {
+            white-space: pre-line;
+            text-overflow: clip;
+            font-family: Inter;
+            line-height: 1.3em;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 42px;
+            text-align: left;
+            margin-left: 5vw;
+            width: 42vw;
+        }
+        
+        p {
+            text-transform: none;
+            white-space: pre-line;
+            font-family: Inter;
+            line-height: 1.4em;
+            font-weight: 300;
+            font-size: 16px;
+            color: #fff;
+            width: 42vw;
+            margin-left: 5vw;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        button {
+            font-family: Inter;
+            display: inline-block;
+            border: 2px solid #F5F5DC;
+            background: #F5F5DC;
+            padding: 12px 40px;
+            line-height: 1.4;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 30px;
+            text-transform: uppercase;
+            transition: all .4s ease;
+            margin-top: 5vh;
+            margin-left: 5vw;
+            cursor: pointer;
+
+            a {
+                color: #4CAF50;
+            }
+        }
+
+        button:hover {
+            background: transparent;
+            border: solid 2px #4CAF50;
+    }
+}
+
+    .overlay-div2 {
+        z-index: 2;
+        height: 670px;
+        width: 35vw;
+        position: absolute;
+        left: 52vw;
+        top: 1250px;
+        opacity: 0.7;
+        background-color: #302c2d;
+    }
+
+    .our-focus-img {
+        height: 670px;
+        width: 35vw;
+        object-fit: cover;
+        position: absolute;
+        left: 52vw;
+        top: 1250px;
+        opacity: 0.9;
+    }
+
+    .banner2 {
+        height: 670px;
+        width: 13vw;
+        object-fit: cover;
+        position: absolute;
+        left: 87vw;
+        top: 1250px;
+    }
+}
+
+    #impact-section {
+        .banner3 {
+            position: absolute;
+            top: 1920px;
+            left: 0px;
+            height: 800px;
+            width: 10vw;
+            object-fit: cover;
+        }
+
+        .our-impact-img {
+            position: absolute;
+            top: 1920px;
+            width: 90vw;
+            height: 800px;
+            object-fit: cover;
+            left: 10vw;
+        }
+
+        .overlay-div3 {
+            position: absolute;
+            top: 1920px;
+            width: 90vw;
+            height: 800px;
+            left: 10vw;
+            z-index: 2;
+            opacity: 0.7;
+            background-color: #302c2d;
+        }
+    }
+
