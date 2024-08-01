@@ -1,6 +1,6 @@
 {
-  "name": "easybank",
-  "author": "yousoumar",
+  "name": "Urban Projects Sports Equipment Redistribution",
+  "author": "Christian Lin",
   "private": true,
   "scripts": {
     "start": "webpack serve --open",
