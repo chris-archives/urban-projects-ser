@@ -479,3 +479,27 @@ nav {
     }
 }
 
+footer {
+    position: absolute;
+    top: 3300px;
+    background-color: #4CAF50;
+    padding: 70px 0;
+    width: 100vw;
+
+
+    .container {
+        max-width: 1170px;
+        margin: auto;
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            width: 25%;
+            padding: 0 15px;
+        }
+    }
+}
+
