@@ -48,7 +48,7 @@ nav {
 #hero {
     h1 {
         font-size: 67px;
-        font-family: Inter;
+        font-family: 'Inter';
         line-height: 1.3em;
         font-weight: 700;
         text-transform: uppercase;
@@ -155,7 +155,7 @@ nav {
         margin-left: 10vw;
         white-space: pre-line;
         text-overflow: clip;
-        font-family: Inter;
+        font-family: 'Inter';
         line-height: 1.3em;
         font-weight: 700;
         text-transform: uppercase;
@@ -170,7 +170,7 @@ nav {
         margin-left: 10vw;
         text-transform: none;
         white-space: pre-line;
-        font-family: Inter;
+        font-family: 'Inter';
         line-height: 1.4em;
         font-weight: 300;
         font-size: 16px;
@@ -193,7 +193,7 @@ nav {
             margin: 0px 0px 8px;
             white-space: pre-line;
             text-overflow: clip;
-            font-family: Inter;
+            font-family: 'Inter';
             line-height: 1.4em;
             font-weight: 300;
             font-size: 13px;
@@ -208,7 +208,7 @@ nav {
         h1 {
             white-space: pre-line;
             text-overflow: clip;
-            font-family: Inter;
+            font-family: 'Inter';
             line-height: 1.3em;
             font-weight: 700;
             text-transform: uppercase;
@@ -222,7 +222,7 @@ nav {
         p {
             text-transform: none;
             white-space: pre-line;
-            font-family: Inter;
+            font-family: 'Inter';
             line-height: 1.4em;
             font-weight: 300;
             font-size: 16px;
@@ -234,7 +234,7 @@ nav {
         }
 
         button {
-            font-family: Inter;
+            font-family: 'Inter';
             display: inline-block;
             border: 2px solid #F5F5DC;
             background: #F5F5DC;
@@ -327,7 +327,7 @@ nav {
             top: 2000px;
             white-space: pre-line;
             text-overflow: clip;
-            font-family: Inter;
+            font-family: 'Inter';
             line-height: 1.4em;
             font-weight: 300;
             font-size: 13px;
@@ -345,7 +345,7 @@ nav {
             top: 2230px;
             white-space: pre-line;
             text-overflow: clip;
-            font-family: Inter;
+            font-family: 'Inter';
             line-height: 1.3em;
             font-weight: 700;
             text-transform: uppercase;
@@ -362,7 +362,7 @@ nav {
             top: 2350px;
             text-transform: none;
             white-space: pre-line;
-            font-family: Inter;
+            font-family: 'Inter';
             line-height: 1.4em;
             font-weight: 300;
             font-size: 16px;
@@ -375,7 +375,7 @@ nav {
             z-index: 5;
             position: absolute;
             top: 2440px;
-            font-family: Inter;
+            font-family: 'Inter';
             display: inline-block;
             color: white;
             border: 2px solid #F5F5DC;
@@ -399,7 +399,7 @@ nav {
             z-index: 5;
             text-transform: none;
             white-space: pre-line;
-            font-family: Inter;
+            font-family: 'Inter';
             line-height: 1.4em;
             font-weight: 500;
             font-size: 16px;
@@ -438,7 +438,7 @@ nav {
         left: 55vw;
         white-space: pre-line;
         text-overflow: clip;
-        font-family: Inter;
+        font-family: 'Inter';
         line-height: 1.4em;
         font-weight: 300;
         font-size: 13px;
@@ -454,7 +454,7 @@ nav {
         left: 55vw;
         white-space: pre-line;
         text-overflow: clip;
-        font-family: Inter;
+        font-family: 'Inter';
         line-height: 1.3em;
         font-weight: 700;
         text-transform: uppercase;
@@ -470,7 +470,7 @@ nav {
         left: 55vw;
         text-transform: none;
         white-space: pre-line;
-        font-family: Inter;
+        font-family: 'Inter';
         line-height: 1.4em;
         font-weight: 300;
         font-size: 16px;
@@ -499,6 +499,18 @@ footer {
         .col {
             width: 25%;
             padding: 0 15px;
+
+            h4 {
+                font-size: 18px;
+                margin-bottom: 30px;
+
+                a {
+                    color: #fff;
+                    text-transform: capitalize !important;
+                    font-family: 'Inter';
+                    position: relative;
+                }
+            }
         }
     }
 }
