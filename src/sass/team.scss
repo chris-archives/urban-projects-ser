@@ -1,0 +1,188 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html, body {
+    height: auto;
+}
+
+nav {
+    display: flex;
+    padding: 5vh 3vw 0px 6.5vw;
+
+    
+    div {
+        width: 40vw;
+        position: absolute
+    }
+
+    h1 {
+        color: #fff;
+        font-family: 'Inter';
+        font-size: 30px;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 8vw;
+        
+        li a {
+            margin-left: 40px;
+            font-size: 16px;
+            font-family: "Inter";
+            font-weight: 500;
+            border-bottom: solid 3px transparent;
+            transition: all 0.4s ease;
+            color: #fff;
+        }
+
+        li a:hover {
+            border-bottom: solid 3px #56AE57;
+        }
+    }
+}
+
+#hero {
+    .team-img {
+        position: absolute;
+        height: 600px;
+        width: 950px;
+        object-fit: cover;
+        right: 0px;
+        top: 0px;
+        z-index: -2;
+    }
+
+    .overlay-div {
+        position: absolute;
+        height: 600px;
+        width: 950px;
+        right: 0px;
+        top: 0px;
+        z-index: -1;
+        opacity: 0.7;
+        background-color: #302c2d;
+    }
+
+    .grey-background {
+        height: calc(96vh + 600px);
+        width: 100vw;
+        z-index: -5;
+        background-color: #302c2d;
+        position: absolute;
+        top: 0px;
+    }
+
+    h1 {
+        margin-top: 30px;
+        font-size: 67px;
+        font-family: 'Inter';
+        line-height: 1.3em;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: left;
+        width: 78vw;
+        position: absolute;
+        top: 48vh;
+        left: 12vw;
+    }
+
+    h6 {
+        position: absolute;
+        top: 48vh;
+        left: 12vw;
+        white-space: pre-line;
+        text-overflow: clip;
+        font-family: 'Inter';
+        line-height: 1.4em;
+        font-weight: 300;
+        font-size: 13px;
+        text-transform: none;
+        color: #fff;
+        text-align: left;
+    }
+
+    #hero-part2 {
+        .banner {
+            height: 96vh;
+            width: 10vw;
+            object-fit: cover;
+            position: absolute;
+            right: 0px;
+            top: 600px;
+        }
+
+        .team-section-img {
+            height: 96vh;
+            width: 42vw;
+            object-fit: cover;
+            position: absolute;
+            right: 10vw;
+            top: 600px;
+        }
+
+        .overlay-div2 {
+            height: 96vh;
+            width: 42vw;
+            position: absolute;
+            right: 10vw;
+            top: 600px;
+            opacity: 0.7;
+            background-color: #4b494a;
+        }
+
+        h6 {
+            position: absolute;
+            top: calc(40vh + 600px);
+            white-space: pre-line;
+            text-overflow: clip;
+            font-family: 'Inter';
+            line-height: 1.4em;
+            font-weight: 300;
+            font-size: 13px;
+            text-transform: none;
+            color: #fff;
+            text-align: left;
+            margin-left: -80px;
+            width: 38vw;
+        }
+
+        h1 {
+            position: absolute;
+            top: calc(38vh + 600px);
+            margin-left: -80px;
+            font-size: 67px;
+            font-family: 'Inter';
+            line-height: 1.3em;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #fff;
+            text-align: left;
+            width: 38vw;
+        }
+
+        p {
+            width: 38vw;
+            position: absolute;
+            top: calc(56vh + 600px);
+            left: 12vw;
+            margin-left: -80px;
+            text-transform: none;
+            white-space: pre-line;
+            font-family: 'Inter';
+            line-height: 1.4em;
+            font-weight: 300;
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+}
+
