@@ -8,6 +8,10 @@
     text-decoration: none;
 }
 
+html, body {
+    height: auto;
+}
+
 nav {
     display: flex;
     padding: 5vh 3vw 0px 6.5vw;
