@@ -261,7 +261,15 @@ nav {
 
             .back {
                 transform: rotateY(180deg);
-                background: #000;
+                background: rgba(157, 193, 131, 0.95);
+                text-transform: none;
+                white-space: pre-line;
+                font-family: 'Inter';
+                line-height: 1.4em;
+                font-weight: 500;
+                font-size: 20px;
+                color: #fff;
+
             }
         }
 
