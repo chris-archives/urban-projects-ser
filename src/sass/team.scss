@@ -10,6 +10,7 @@
 
 html, body {
     height: auto;
+    overflow-x: hidden;
 }
 
 nav {
@@ -286,30 +287,39 @@ nav {
     }
 }
 
-#qoute {
+#qoute-container {
     margin-top: 2vh;
     display: flex;
     justify-content: flex-start;
     width: 100vw;
+    height: 90vh;
+    overflow-x: hidden;
+    position: relative;
 
-     img {
-        position: relative;
-        left: 0px;
-        object-fit: cover;
-        height: 90vh;
-        width: 50vw;
-    }
+    #qoute {
 
-    .qoute-text-container {
-        display: flex;
-        flex-direction: column;
+        img {
+            position: absolute;
+            left: 0px;
+            object-fit: cover;
+            height: 90vh;
+            width: 50vw;
+        }
 
-        .qoute {
+        .qoute-text-container {
+            display: flex;
+            flex-direction: column;
+            position: absolute; /* Absolute positioning for overlap */
+            top: 0;
+            left: 50vw;
             width: 48vw;
+        }
+    
+        .qoute {
             padding-left: 3vw;
             text-transform: none;
             white-space: pre-line;
-            font-family: Inter;
+            font-family: 'Inter';
             line-height: 1.3em;
             font-weight: 700;
             color: rgb(48, 44, 45);
@@ -321,7 +331,7 @@ nav {
             padding-left: 3vw;
             text-transform: none;
             white-space: pre-line;
-            font-family: Inter;
+            font-family: 'Inter';
             line-height: 1.4em;
             font-weight: 300;
             font-size: 16px;
