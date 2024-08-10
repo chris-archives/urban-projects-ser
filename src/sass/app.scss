@@ -27,7 +27,7 @@ nav {
         color: #fff;
         font-family: Inter;
         font-size: 25px;
-        margin-top: 7vh;
+        margin-top: 3vh;
         margin-left: -35px;
         position: relative;
         left: 50px;
@@ -51,7 +51,7 @@ nav {
         display: flex;
         position: absolute;
         right: 8vw;
-        top: 7vh;
+        top: 3vh;
         z-index: 5;
 
         li a {
@@ -512,6 +512,7 @@ nav {
         text-align: left;
         margin-left: 8vw;
         width: 50vw;
+
     }
 
     p {
@@ -573,7 +574,6 @@ footer {
             color: rgb(255, 255, 255);
             font-size: 42px;
             text-align: center;
-            width: 40vw;
         }
 
         button {
@@ -611,3 +611,31 @@ footer {
         background: rgb(17, 94, 17);
     }
 }
+
+@media (max-width: 1140px) {
+    #about-text-container {
+        h6, h1, p {
+            margin-left: 5vw;
+        }
+    }
+}
+
+@media (max-width: 1042px) {
+    #about-text-container {
+        h6 {
+            margin-top: -5vw;
+        }
+    }
+
+    .our-focus-div {
+        h6 {
+            padding-top: 165px !important;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    
+}
+
+
