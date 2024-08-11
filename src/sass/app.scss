@@ -21,7 +21,7 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    z-index: 5;
+    z-index: 12;
     position: absolute;
     top: 0px;
     transform: translateX(100vw);
@@ -63,7 +63,7 @@ nav {
     padding: 0 9vw;
     flex-direction: column;
     background-color: transparent;
-    z-index: 99;
+    z-index: 100;
 
     #brand {
         color: #fff;
@@ -73,6 +73,7 @@ nav {
         margin-left: -35px;
         position: relative;
         left: 50px;
+        z-index: 10;
     }
 
     .brand-container {
@@ -80,6 +81,7 @@ nav {
         position: absolute;
         left: 5vw;
         z-index: 2;
+        z-index: 15;
 
         img {
             height: 50px;
@@ -113,13 +115,15 @@ nav {
         }
 
         .hamburger {
+            position: relative;
             margin-right: -15px;
-            z-index: 99;
+            z-index: 100;
             display: none;
         }
         
         .bar {
-            z-index: 99;
+            position: relative;
+            z-index: 100;
             height: 2px;
             width: 28px;
             background: #6fff00;
@@ -150,14 +154,9 @@ nav {
 #main-section {
     height: 680px;
     overflow-x: hidden;
-
-    .right-div {
-        height: 680px;
-        width: 52vw;
-        background-color: #302c2d;
-        position: relative;
-        z-index: -1;
-    }
+    background-color: #302c2d;
+    height: 680px;
+    z-index: -5;
 
     .logo-container {
         height: 680px;
@@ -167,20 +166,21 @@ nav {
     }
 
     .overlay-div {
-        height: 670px;
+        height: 680px;
         width: 48vw;
         position: absolute;
         left: 0px;
         opacity: 0.7;
-        background-color: #302c2d
+        background-color: #302c2d;
+        z-index: 2;
     }
 
     .hero-img {
-        height: 690px;
+        height: 680px;
         width: 48vw;
         position: absolute;
         left: 0px;
-        z-index: -1;
+        z-index: 1;
         opacity: 0.9;
         object-fit: cover;
     }
@@ -206,24 +206,26 @@ nav {
         position: absolute;
         top: 200px;
         left: 12vw;
+        z-index: 10;
     }
     
 }
 
 #about-section {
-
-    .banner{
+    #banner{
         height: 250px;
         width: 100vw;
         object-fit: cover;
         position: relative;
         top: -235px;
-        z-index: -1;
+        z-index: 2;
     }
 
     .logos {
         overflow: hidden;
         white-space: nowrap;
+        z-index: 10 !important;
+        position: relative;
     }
 
     .logo-slider {
@@ -231,11 +233,14 @@ nav {
         padding: 60px 0;
         animation: 12s slide infinite linear;
         display: inline-block;
+        z-index: 10 !important;
+        position: relative;
 
         img {
             height: 100px;
-            z-index: 2;
+            z-index: 10 !important;
             margin-right: 100px;
+            position: relative;
         }
     }
 }
@@ -286,7 +291,7 @@ nav {
         color: rgb(48, 44, 45);
         width: 70vw;
         margin-left: 12vw;
-        padding-top: 10px;
+        padding-top: 20px;
         padding-bottom: 10px;
     }
 }
@@ -692,11 +697,6 @@ footer {
 }
 
 @media (max-width: 1042px) {
-    #about-text-container {
-        h6 {
-            margin-top: -5vw;
-        }
-    }
 
     .our-focus-div {
         h6 {
@@ -706,6 +706,11 @@ footer {
 }
 
 @media (max-width: 1024px) {
+    #about-text-container{
+        h1 {
+            font-size: 28px;
+        }
+    }
 
     #main-section {
         h1 {
@@ -726,7 +731,66 @@ footer {
     }
 }
 
+@media (max-width: 832px) {
+    #about-text-container {
+        h6, p {
+            margin-top: -2vw;
+            width: 85vw;
+        }
+    }
+}
+
 @media (max-width: 768px) {
+    #main-section {
+        .hero-img, .overlay-div {
+            width: 70vw;
+            height: 550px;
+        }
+    }
+
+    #our-focus {
+        .our-focus-div {
+            width: 100vw;
+            z-index: 50;
+            height: 340px;
+
+            h6 {
+                padding-top: 70px !important;
+            }
+
+            h1, p {
+                width: 90vw;
+            }
+            h1 {
+                font-size: 32px;
+            }
+        }
+    }
+
+    .our-focus-img {
+        position: absolute !important;
+        height: 800px !important;;
+        width: 75vw !important;;
+        object-fit: cover !important;;
+        opacity: 0.9 !important;;
+        left: 0px !important;
+        top: 0px !important;
+    }
+
+    .overlay-div2 {
+        position: absolute !important;
+        height: 800px !important;;
+        width: 75vw !important;;
+        left: 0px !important;
+        top: 0px !important;
+    }
+    
+    .banner2 {
+        width: 25vw !important;
+        height: 800px !important;
+        left: 75vw !important;
+        top: 0px !important;
+    }
 
 }
 
