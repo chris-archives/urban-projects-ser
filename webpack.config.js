@@ -2,6 +2,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
 const mode = process.env.NODE_ENV === "production" ? "production" : "development";
 const target = process.env.NODE_ENV === "production" ? "browserslist" : "web";
 
@@ -19,6 +21,7 @@ module.exports = {
         clean: true,
         assetModuleFilename: 'assets/[contenthash][ext]'
     },
+
     module: {
         rules: [
             {
@@ -89,28 +92,30 @@ module.exports = {
         ]
     },
 
-    devtool: mode == "production" ? false : "source-map",
+    devtool: mode === "production" ? false : "source-map",
 
     devServer: {
         contentBase: "./build",
-        port: 3000  // Change this to any available port
+        port: 3000
     },
 
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/index.html",
             favicon: "./src/favicon.ico",
-            chunks: ['app']  // Only include app.js for the index.html
+            chunks: ['app'],
         }),
         new HtmlWebpackPlugin({
             template: "./src/team.html",
             filename: "team.html",
-            chunks: ['team']  // Only include team.js for the team.html
+            chunks: ['team'],
         }),
         new MiniCssExtractPlugin({
             filename: mode === "production" ? 'css/[name].[contenthash].chunk.css' : 'css/[name].css',
-        })
+        }),
+        new CleanWebpackPlugin(),
     ],
+
     optimization: {
         minimizer: [
             '...',
@@ -135,5 +140,6 @@ module.exports = {
             },
         },
     },
+
     target: target
-}
+};
