@@ -843,6 +843,95 @@ footer {
     }
 }
 
+@media (max-width: 675px) {
+    #main-section {
+        h1 {
+            font-size: 55px;
+        }
+    }
 
+    #about-text-container {
+        h6 {
+            margin-top: -5vw;
+        }
+    }
 
+    #our-focus {
+        .our-focus-div {
+            h6 {
+                padding-top: 40px !important;
+            }
+
+            button {
+                margin-top: 2vh;
+            }
+        }
+    }
+
+    #our-mission {
+        h1 {
+            font-size: 32px !important;
+        }
+    }
+
+    footer {
+        h1 {
+            font-size: 32px !important;
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    #main-section {
+        h1 {
+            font-size: 50px !important;
+        }
+    }
+}
+
+@media (max-width: 526px) {
+    #about-text-container {
+        h1 {
+            font-size: 28px;
+        }
+
+        h6 {
+            margin-top: -5vh;
+        }
+    }
+    #our-focus {
+        .our-focus-div{
+            h1 {
+                font-size: 28px;
+            }
+        }
+    }
+
+    #our-impact {
+        h1 {
+            font-size: 28px;
+        }
+
+        button {
+            margin-top: 2vh;
+        }
+
+        ul {
+            top: 2770px;
+            left: 20vw;
+        }
+    }
+
+    #our-mission {
+        h1 {
+            font-size: 28px !important;
+        }
+    }
+
+    footer {
+        h1 {
+            font-size: 28px !important;
+        }
+    }
+}
 
