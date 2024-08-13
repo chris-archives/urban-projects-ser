@@ -21,8 +21,8 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    z-index: 12;
-    position: absolute;
+    z-index: 90;
+    position: fixed;
     top: 0px;
     transform: translateX(100vw);
     transition: all 0.3s ease;
@@ -63,7 +63,7 @@ nav {
     padding: 0 9vw;
     flex-direction: column;
     background-color: transparent;
-    z-index: 100;
+    z-index: 100 !important;
 
     #brand {
         color: #fff;
@@ -73,7 +73,7 @@ nav {
         margin-left: -35px;
         position: relative;
         left: 50px;
-        z-index: 10;
+        z-index: 100;
     }
 
     .brand-container {
@@ -81,7 +81,7 @@ nav {
         position: absolute;
         left: 5vw;
         z-index: 2;
-        z-index: 15;
+        z-index: 100;
 
         img {
             height: 50px;
@@ -96,7 +96,7 @@ nav {
         position: absolute;
         right: 8vw;
         top: 3vh;
-        z-index: 5;
+        z-index: 100;
 
         li a {
             font-family: Inter;
@@ -107,7 +107,7 @@ nav {
             color: #fff !important;
             border-bottom: 2px solid transparent;
             transition: all .5s ease;
-            z-index: 5;
+            z-index: 100;
 
             .over-write-color-specs {
                 color: #fff !important;
@@ -117,7 +117,7 @@ nav {
         .hamburger {
             position: relative;
             margin-right: -15px;
-            z-index: 100;
+            z-index: 100 !important;
             display: none;
         }
         
@@ -128,7 +128,6 @@ nav {
             width: 28px;
             background: #6fff00;
             margin: 5px 0;
-            opacity: 1;
             transition: transform 0.3s ease-in-out;
             right: 20px;
         }
@@ -156,7 +155,7 @@ nav {
     overflow-x: hidden;
     background-color: #302c2d;
     height: 680px;
-    z-index: -5;
+    z-index: 1;
 
     .logo-container {
         height: 680px;
@@ -172,7 +171,7 @@ nav {
         left: 0px;
         opacity: 0.7;
         background-color: #302c2d;
-        z-index: 2;
+        z-index: 3;
     }
 
     .hero-img {
@@ -180,7 +179,7 @@ nav {
         width: 48vw;
         position: absolute;
         left: 0px;
-        z-index: 1;
+        z-index: 2;
         opacity: 0.9;
         object-fit: cover;
     }
@@ -191,7 +190,6 @@ nav {
         position: relative;
         right: -15vw;
         top: -545px;
-        z-index: -1;
     }
 
     h1 {
@@ -206,7 +204,7 @@ nav {
         position: absolute;
         top: 200px;
         left: 12vw;
-        z-index: 10;
+        z-index: 4;
     }
     
 }
@@ -218,7 +216,7 @@ nav {
         object-fit: cover;
         position: relative;
         top: -235px;
-        z-index: 2;
+        z-index: 5;
     }
 
     .logos {
@@ -233,7 +231,7 @@ nav {
         padding: 60px 0;
         animation: 12s slide infinite linear;
         display: inline-block;
-        z-index: 10 !important;
+        z-index: 20 !important;
         position: relative;
 
         img {
@@ -622,7 +620,7 @@ footer {
     .footer-img {
         height: 500px;
         width: 90vw;
-        object-fit: fill;
+        object-fit: cover;
         opacity: 0.9;
         right: 2vw;
         position: absolute;
