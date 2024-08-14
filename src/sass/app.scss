@@ -933,3 +933,57 @@ footer {
     }
 }
 
+@media (max-width: 440px) {
+    #main-section {
+        h1 {
+            font-size: 45px !important;
+        }
+    }
+
+    #about-text-container {
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    #our-focus {
+        h1 {
+            font-size: 24px !important;
+        }
+
+        p {
+            font-size: 15px !important;
+        }
+    }
+
+    #our-impact {
+        h1 {
+            font-size: 24px !important;
+        }
+
+        p {
+            font-size: 15px !important;
+        }
+    }
+
+    #our-mission {
+        h1 {
+            font-size: 24px !important;
+        }
+
+        p {
+            font-size: 15px !important;
+        }
+    }
+
+    footer {
+        h1 {
+            font-size: 25px !important;
+        }
+    }
+}
+
