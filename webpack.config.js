@@ -12,7 +12,9 @@ module.exports = {
 
     entry: {
         app: './src/js/app.js',
-        team: './src/js/team.js',  // New entry point for the team page
+        team: './src/js/team.js',
+        about: './src/js/about.js',
+        apply: './src/js/apply.js',
     },
 
     output: {
@@ -95,8 +97,11 @@ module.exports = {
     devtool: mode === "production" ? false : "source-map",
 
     devServer: {
-        contentBase: "./build",
-        port: 3000
+        static: {
+            directory: path.join(__dirname, 'build'),
+        },
+        port: 3000,
+        open: true,
     },
 
     plugins: [
@@ -109,6 +114,16 @@ module.exports = {
             template: "./src/team.html",
             filename: "team.html",
             chunks: ['team'],
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/about.html",
+            filename: "about.html",
+            chunks: ['about'],
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/apply.html",
+            filename: "apply.html",
+            chunks: ['apply'],
         }),
         new MiniCssExtractPlugin({
             filename: mode === "production" ? 'css/[name].[contenthash].chunk.css' : 'css/[name].css',
