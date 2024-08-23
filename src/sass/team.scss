@@ -2,12 +2,12 @@
 @import "./utility/navbar";
 
 
-#hero {
+#main-section {
     .team-img {
+        object-fit: cover !important;
         position: absolute;
         height: 600px;
         width: 950px;
-        object-fit: cover;
         right: 0;
         top: 0;
         z-index: -2;
@@ -25,7 +25,7 @@
     }
 
     .grey-background {
-        height: calc(96vh + 600px);
+        height: calc(670px + 600px);
         width: 100vw;
         z-index: -5;
         background-color: #302c2d;
@@ -34,8 +34,7 @@
     }
 
     h1 {
-        margin-top: 30px;
-        font-size: 67px !important;
+        font-size: 67px;
         font-family: 'Inter';
         line-height: 1.3em;
         font-weight: 700;
@@ -44,13 +43,12 @@
         text-align: left;
         width: 78vw;
         position: absolute;
-        top: 48vh;
         left: 12vw;
+        top: 375px;
     }
 
     h6 {
         position: absolute;
-        top: 48vh;
         left: 12vw;
         white-space: pre-line;
         text-overflow: clip;
@@ -61,40 +59,47 @@
         text-transform: none;
         color: #fff;
         text-align: left;
+        top: 360px;
+
+    }
+}
+
+
+#hero-part2 {
+    .banner {
+        height: 670px;
+        width: 10vw;
+        object-fit: cover;
+        position: absolute;
+        right: 0;
+        top: 600px;
     }
 
-    #hero-part2 {
-        .banner {
-            height: 96vh;
-            width: 10vw;
-            object-fit: cover;
-            position: absolute;
-            right: 0;
-            top: 600px;
-        }
+    .team-section-img {
+        height: 670px;
+        width: 42vw;
+        object-fit: cover;
+        position: absolute;
+        right: 10vw;
+        top: 600px;
+    }
 
-        .team-section-img {
-            height: 96vh;
-            width: 42vw;
-            object-fit: cover;
-            position: absolute;
-            right: 10vw;
-            top: 600px;
-        }
+    .overlay-div2 {
+        height: 670px;
+        width: 42vw;
+        right: 10vw;
+        top: 600px;
+        opacity: 0.7;
+        background-color: #4b494a;
+        position: absolute;
+    }
 
-        .overlay-div2 {
-            height: 96vh;
-            width: 42vw;
-            position: absolute;
-            right: 10vw;
-            top: 600px;
-            opacity: 0.7;
-            background-color: #4b494a;
-        }
+    .text-container {
+        position: absolute;
+        top: 800px;
+        left: 5vw;
 
         h6 {
-            position: absolute;
-            top: calc(40vh + 600px);
             white-space: pre-line;
             text-overflow: clip;
             font-family: 'Inter';
@@ -104,30 +109,22 @@
             text-transform: none;
             color: #fff;
             text-align: left;
-            margin-left: -80px;
-            width: 38vw;
+            width: 40vw;
         }
-
+    
         h1 {
-            position: absolute;
-            top: calc(38vh + 600px);
-            margin-left: -80px;
-            font-size: 67px !important;
+            font-size: 67px;
             font-family: 'Inter';
             line-height: 1.3em;
             font-weight: 700;
             text-transform: uppercase;
             color: #fff;
             text-align: left;
-            width: 38vw;
+            width: 40vw;
         }
-
+    
         p {
-            width: 38vw;
-            position: absolute;
-            top: calc(56vh + 600px);
-            left: 12vw;
-            margin-left: -80px;
+            width: 40vw;
             text-transform: none;
             white-space: pre-line;
             font-family: 'Inter';
@@ -135,21 +132,21 @@
             font-weight: 300;
             font-size: 16px;
             color: #fff;
+            margin-top: 10px;
         }
     }
 }
 
 #team-display {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    top: calc(600px + 96vh);
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+width: 100vw;
+height: 100%;
+position: absolute;
+top: 1320px;
 
     h1 {
-        top: calc(38vh + 600px);
         font-size: 40px;
         font-family: 'Inter';
         line-height: 1.3em;
@@ -226,7 +223,6 @@
 
             }
         }
-
         p {
             text-align: center;
             text-transform: none;
@@ -237,5 +233,197 @@
             font-size: 16px;
             color: rgb(48, 44, 45);
         }
+}
+}
+
+@media (max-width: 1182px) {
+    #hero-part2 {
+        h1 {
+            font-size: 60px !important;
+        }
+    }
+
+    #team-display {
+        .team-display-text {
+            width: 70vw !important;
+        }
     }
 }
+
+@media (max-width: 1024px) {
+    #main-section {
+        h1 {
+            font-size: 62px;
+        }
+    }
+
+    nav {
+        .hamburger {
+            display: block !important;
+        }
+
+        li a {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1002px) {
+    #main-section {
+        .team-img {
+            width: 750px !important;
+        }
+    }
+
+    #hero-part2 {
+        h1 {
+            font-size: 55px !important;
+        }
+
+        .text-container {
+            left: 3vw;
+        }
+    }
+}
+
+@media (max-width: 920px) {
+    #hero-part2 {
+        h1 {
+            font-size: 46px !important;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #main-section {
+        .team-img {
+            width: 650px !important;
+        }
+    }
+
+    #hero-part2 {
+        .text-container {
+            top: 670px;
+            left: 5vw;
+
+            h6, h1, p {
+                width: 80vw;
+            }
+        }
+        .team-section-img, .overlay-div2 {
+            width: 85vw;
+            left: 0px;
+            top: 900px;
+        }
+
+        .banner {
+            width: 15vw;
+            right: 0px;
+            top: 900px;
+        }
+    }
+
+    #team-display {
+        top: 1600px !important;
+
+        .team-display-text {
+            width: 90vw !important;
+        }
+
+    }
+}
+
+@media (max-width: 690px) {
+    #main-section {
+        .team-img {
+            width: 550px !important;
+            height: 500px;
+        }
+
+        h1 {
+            font-size: 50px;
+            width: 80vw;
+            top: 270px;
+        }
+
+        h6 {
+            top: 255px;
+        }
+
+        h6, h1 {
+            left: 8vw;
+        }
+    }
+
+    #hero-part2 {
+        .text-container {
+            top: 590px;
+        }
+
+        .team-section-img, .overlay-div2, .banner {
+            top: 820px;
+        }
+    }
+
+    #team-display {
+        top: 1520px !important;
+    }
+}
+
+
+@media (max-width: 580px) {
+    #main-section {
+        .team-img {
+            width: 520px !important;
+            height: 460px;
+        }
+
+        h1 {
+            font-size: 45px;
+            top: 220px;
+        }
+
+        h6 {
+            top: 195px;
+        }
+
+        h6, h1 {
+            left: 8vw;
+        }
+    }
+
+    #hero-part2 {
+        .text-container {
+            top: 520px;
+        }
+
+        .team-section-img, .overlay-div2, .banner {
+            top: 750px;
+        }
+    }
+
+    #team-display {
+        top: 1450px !important;
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    #hero-part2 {
+        h1 {
+            font-size: 40px !important;
+        }
+    }
+}
+
+@media (max-width: 435px) {
+    #hero-part2 {
+        .text-container {
+            top: 512px;
+        }
+    }
+}
+
