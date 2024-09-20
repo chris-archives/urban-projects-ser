@@ -59,7 +59,6 @@
         color: #fff;
         text-align: left;
         top: 360px;
-
     }
 }
 
@@ -131,6 +130,82 @@
             font-size: 16px;
             color: #fff;
             margin-top: 10px;
+        }
+    }
+}
+
+#information {
+    position: absolute;
+    top: calc(600px + 670px);
+
+    h6 {
+        position: relative;
+        white-space: pre-line;
+        text-overflow: clip;
+        font-family: 'Inter';
+        line-height: 1.4em;
+        font-weight: 300;
+        font-size: 13px;
+        text-transform: none;
+        color: #000;
+        text-align: left;
+        left: 10vw;
+        top: 100px;
+    }
+
+    h1 {
+        font-size: 50px;
+        font-family: 'Inter';
+        line-height: 1.3em;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #000;
+        text-align: left;
+        width: 78vw;
+        position: relative;
+        left: 10vw;
+        top: 105px;
+    }
+
+    p {
+        position: relative;
+        text-transform: none;
+        white-space: pre-line;
+        font-family: 'Inter';
+        line-height: 1.4em;
+        font-weight: 300;
+        font-size: 16px;
+        width: 50vw;
+        color: #000;
+        top: 110px;
+        left: 10vw;
+    }
+
+    .flex-container {
+        position: relative;
+        top: 125px;
+        display: flex;
+        left: 10vw;
+        width: 100vw;
+        gap: 8vw;
+
+        h2 {
+            margin: 0px;
+            text-transform: none;
+            white-space: pre-line;
+            text-overflow: clip;
+            font-family: 'Inter';
+            line-height: 1.3em;
+            font-weight: 700;
+            font-size: 24px;
+            color: rgb(219, 255, 0);
+        }
+
+        p {
+            top: 15px;
+            left: 0px;
+            width: 21vw;
+            margin: 0;
         }
     }
 }
