@@ -138,6 +138,15 @@
     position: absolute;
     top: calc(600px + 670px);
 
+    img {
+        position: absolute;
+        top: -0.5px;
+        z-index: -1;
+        height: 750px;
+        width: 100vw;
+        object-fit: cover;
+    }
+
     h6 {
         position: relative;
         white-space: pre-line;
@@ -147,7 +156,7 @@
         font-weight: 300;
         font-size: 13px;
         text-transform: none;
-        color: #000;
+        color: #fff;
         text-align: left;
         left: 10vw;
         top: 100px;
@@ -159,7 +168,7 @@
         line-height: 1.3em;
         font-weight: 700;
         text-transform: uppercase;
-        color: #000;
+        color: #fff;
         text-align: left;
         width: 78vw;
         position: relative;
@@ -176,9 +185,10 @@
         font-weight: 300;
         font-size: 16px;
         width: 50vw;
-        color: #000;
+        color: #fff;
         top: 110px;
         left: 10vw;
+        margin-bottom: 35px;
     }
 
     .flex-container {
@@ -190,7 +200,7 @@
         gap: 8vw;
 
         h2 {
-            margin: 0px;
+            margin-top: 10px;
             text-transform: none;
             white-space: pre-line;
             text-overflow: clip;
@@ -207,6 +217,15 @@
             width: 21vw;
             margin: 0;
         }
+
+        .ri-crosshair-line, .ri-basketball-fill, .ri-money-dollar-circle-line {
+            font-size: 40px;
+            color: rgb(219, 255, 0);
+        }
     }
 }
+
+
+
+
 
