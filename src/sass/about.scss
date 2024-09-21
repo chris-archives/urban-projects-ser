@@ -62,7 +62,7 @@
     }
 }
 
-#hero-part2 {
+#partnership {
     .banner {
         height: 670px;
         width: 10vw;
@@ -72,13 +72,14 @@
         top: 600px;
     }
 
-    .about-section-img {
+    .partnership-img {
         height: 670px;
         width: 42vw;
         object-fit: cover;
         position: absolute;
         left: 10vw;
         top: 600px;
+        opacity: 0.9;
     }
 
     .overlay-div2 {
@@ -93,7 +94,7 @@
 
     .text-container {
         position: absolute;
-        top: 800px;
+        top: 715px;
         right: 5vw;
 
         h6 {
@@ -108,9 +109,10 @@
             text-align: left;
             width: 40vw;
         }
-    
+
+         
         h1 {
-            font-size: 52px;
+            font-size: 40px;
             font-family: 'Inter';
             line-height: 1.3em;
             font-weight: 700;
@@ -118,18 +120,22 @@
             color: #fff;
             text-align: left;
             width: 40vw;
+            margin-bottom: 40px;
         }
-    
-        p {
-            width: 40vw;
-            text-transform: none;
-            white-space: pre-line;
-            font-family: 'Inter';
-            line-height: 1.4em;
-            font-weight: 300;
-            font-size: 16px;
-            color: #fff;
-            margin-top: 10px;
+
+        ul {
+            li {
+                text-transform: none;
+                white-space: pre-line;
+                font-family: 'Inter';
+                line-height: 1.4em;
+                font-weight: 300;
+                font-size: 14px;
+                color: rgb(255, 255, 255);
+                margin-top: 10px;
+                margin-left: 25px;
+                list-style: inside;
+            }
         }
     }
 }
@@ -222,6 +228,186 @@
             font-size: 40px;
             color: rgb(219, 255, 0);
         }
+    }
+}
+
+#philosophy {
+    position: absolute;
+    top: calc(600px + 670px + 749px);
+    width: 100vw;
+
+    .banner {
+        height: 670px;
+        width: 10vw;
+        position: absolute;
+        object-fit: cover;
+        right: 0px;
+    }
+
+    .philosophy-img {
+        height: 670px;
+        width: 42vw;
+        position: absolute;
+        right: 10vw;
+        object-fit: cover;
+        opacity: 0.9;
+    }
+
+    .overlay-div3 {
+        height: 670px;
+        width: 42vw;
+        right: 10vw;
+        opacity: 0.7;
+        background-color: #4b494a;
+        position: absolute;
+    }
+
+    .text-container {
+        position: absolute;
+        top: 200px;
+        left: 3vw;
+
+        h6 {
+            white-space: pre-line;
+            text-overflow: clip;
+            font-family: 'Inter';
+            line-height: 1.4em;
+            font-weight: 300;
+            font-size: 13px;
+            text-transform: none;
+            color: #000;
+            text-align: left;
+            width: 40vw;
+        }
+
+         
+        h1 {
+            font-size: 40px;
+            font-family: 'Inter';
+            line-height: 1.3em;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #000;
+            text-align: left;
+            width: 40vw;
+        }
+
+        p {
+            width: 40vw;
+            text-transform: none;
+            white-space: pre-line;
+            font-family: 'Inter';
+            line-height: 1.4em;
+            font-weight: 300;
+            font-size: 16px;
+            color: #000;
+            margin-top: 10px;
+        }
+
+        button {
+            font-family: 'Inter';
+            display: inline-block;
+            color: white;
+            border: 2px solid rgb(149, 0, 255);
+            background: rgb(149, 0, 255);
+            padding: 12px 40px;
+            line-height: 1.4;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 30px;
+            text-transform: uppercase;
+            transition: all .5s ease;
+            margin-top: 25px;
+            cursor: pointer;
+    
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        button:hover {
+            background: transparent;
+            border: 2px solid rgb(149, 0, 255);
+
+            a {
+                color: #000;
+            }
+        }
+    }
+}
+
+footer {
+    top: calc(600px + 670px + 749px + 600px);
+    height: 600px;
+    width: 100vw;
+    position: absolute;
+    background-color: #302c2d;
+
+    .banner {
+        height: 600px;
+        width: 2vw;
+        position: absolute;
+        left: 0px;
+        object-fit: cover;
+    }
+
+    .footer-img {
+        height: 500px;
+        width: 88vw;
+        object-fit: cover;
+        opacity: 0.9;
+        left: 2vw;
+        position: absolute;
+    }
+
+    .overlay-div5 {
+        position: absolute;
+        height: 500px;
+        width: 88vw;
+        left: 2vw;
+        background-color:rgba(48, 44, 45, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h1 {
+            margin: 0px;
+            white-space: pre-line;
+            text-overflow: clip;
+            font-family: Inter;
+            line-height: 1.3em;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: rgb(255, 255, 255);
+            font-size: 42px;
+            text-align: center;
+        }
+
+        button {
+            font-family: 'Inter';
+            display: inline-block;
+            border: none;
+            background: rgba(13, 232, 5, 0.705);
+            padding: 12px 40px;
+            line-height: 1.4;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 30px;
+            text-transform: uppercase;
+            transition: all .5s ease;
+            margin-top: 5vh;
+            cursor: pointer;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    button:hover {
+        background: rgb(17, 94, 17);
     }
 }
 
