@@ -411,6 +411,52 @@ footer {
     }
 }
 
+@media (max-width: 1182px) {
+    #main-section {
+        h1 {
+            font-size: 58px;
+            top: 345px;
+        }
+
+        h6 {
+            top: 330px;
+        }
+    }
+    #information {
+        p {
+            width: 70vw;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    #main-section {
+        h1 {
+            font-size: 52px;
+        }
+    }
+    nav {
+        .hamburger {
+            display: block !important;
+        }
+
+        li a {
+            display: none;
+        }
+    }
+    #information {
+        p {
+            width: 80vw;
+        }
+
+        .flex-container {
+            p {
+                width: 22vw;
+            }
+        }
+    }
+}
+
+
 
 
 
