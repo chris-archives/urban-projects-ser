@@ -95,7 +95,8 @@
     .text-container {
         position: absolute;
         top: 715px;
-        right: 5vw;
+        left: 52vw;
+        margin-left: 50px;
 
         h6 {
             white-space: pre-line;
@@ -343,28 +344,20 @@ footer {
     position: absolute;
     background-color: #302c2d;
 
-    .banner {
-        height: 600px;
-        width: 2vw;
-        position: absolute;
-        left: 0px;
-        object-fit: cover;
-    }
-
     .footer-img {
         height: 500px;
-        width: 88vw;
+        width: 100vw;
         object-fit: cover;
         opacity: 0.9;
-        left: 2vw;
+        left: 0vw;
         position: absolute;
     }
 
     .overlay-div5 {
         position: absolute;
         height: 500px;
-        width: 88vw;
-        left: 2vw;
+        width: 100vw;
+        left: 0vw;
         background-color:rgba(48, 44, 45, 0.7);
         display: flex;
         justify-content: center;
@@ -427,7 +420,14 @@ footer {
             width: 70vw;
         }
     }
+
+    #philosophy {
+        .text-container {
+            top: 175px;
+        }
+    }
 }
+
 @media (max-width: 1024px) {
     #main-section {
         h1 {
@@ -451,8 +451,190 @@ footer {
         .flex-container {
             p {
                 width: 22vw;
+                font-size: 15px;
             }
         }
+    }
+}
+
+@media (max-width: 1002px) {
+    #main-section {
+        .about-img {
+            width: 750px !important;
+        }
+    }
+
+    #partnership {
+        .text-container {
+            margin-left: 30px;
+            h1 {
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+@media (max-width: 890px) {
+    #philosophy {
+        .text-container {
+            top: 150px;
+        }
+    }
+
+    #partnership {
+        .text-container {
+            top: 705px;
+        }
+    }
+}
+
+@media (max-width: 830px) {
+    #information {
+        img {
+            height: 950px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        .flex-container {
+            flex-direction: column;
+            gap: 6vw;
+
+            p {
+                width: 85vw;
+                margin-top: -5px;
+            }
+
+            h2 {
+                font-size: 20px;
+                margin-top: 3px;
+            }
+
+            .ri-crosshair-line, .ri-basketball-fill, .ri-money-dollar-circle-line {
+                font-size: 35px;
+                color: rgb(219, 255, 0);
+            }
+        }
+    }
+
+    #philosophy {
+        top: calc(600px + 670px + 949px);
+    }
+
+    footer {
+        top: calc(600px + 670px + 949px + 600px);
+
+        h1 {
+            font-size: 38px !important;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    #philosophy {
+        top: calc(600px + 670px + 949px);
+        
+        .text-container {
+            top: 120px;
+
+            h1 {
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #main-section {
+        .about-img {
+            width: 650px !important;
+        }
+    }
+
+    #partnership {
+        .text-container {
+            top: 670px;
+            left: 5vw;
+            margin-left: 0;
+
+            h6, h1, p {
+                width: 80vw;
+            }
+
+            ul {
+                display: flex;
+
+                div {
+                    margin-top: -30px;
+
+                    li {
+                        margin-top: -2px;
+                    }
+                }
+            }
+        }
+        .partnership-img, .overlay-div2 {
+            width: 85vw;
+            top: 920px;
+            left: 15vw;
+        }
+
+        .banner {
+            width: 15vw;
+            right: 0px !important;
+            top: 920px;
+        }
+    }
+
+    #information {
+        top: calc(600px + 990px);
+    }
+
+    #philosophy {
+        top: calc(600px + 990px + 949px);
+    
+        .text-container {
+            margin-top: -75px;
+            left: 5vw;
+            margin-left: 0;
+
+            h6, h1, p {
+                width: 80vw;
+            }
+
+            ul {
+                display: flex;
+
+                div {
+                    margin-top: -30px;
+
+                    li {
+                        margin-top: -2px;
+                    }
+                }
+            }
+        }
+        .philosophy-img, .overlay-div3 {
+            width: 85vw;
+            top: 350px;
+            left: 15vw;
+        }
+
+        .banner {
+            width: 15vw;
+            top: 350px;
+            left: 0vw;
+        }
+    }
+
+    footer {
+        top: calc(600px + 990px + 949px + 1020px);
     }
 }
 
