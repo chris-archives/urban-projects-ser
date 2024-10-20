@@ -743,7 +743,73 @@ footer {
         }
     }
 
+    #partnership {
+        .text-container {
+            h1 {
+                font-size: 30px !important;
+            }
 
+            li {
+                margin-top: -2px !important;
+                margin-left: 3px !important;
+                font-size: 13.5px !important;
+            }
+        }
+    }
+
+    #philosophy {
+        .text-container {
+            margin-top: -150px !important;
+
+            h1 {
+                font-size: 35px;
+            }
+        }
+    }
+
+    footer {
+        h1 {
+            font-size: 30px !important;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    #partnership {
+        .text-container {
+            li {
+                font-size: 13px !important;
+            }
+        }
+    }
+
+    #information {
+        h1 {
+            font-size: 35px;
+        }
+
+        h2 {
+            font-size: 18px !important;
+        }
+
+        p {
+            font-size: 14px !important;
+        }
+
+        .flex-container {
+            p {
+                font-size: 14px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #partnership {
+        .text-container {
+            top: 540px;
+        }
+    }
 }
 
 
