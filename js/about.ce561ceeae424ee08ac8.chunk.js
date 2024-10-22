@@ -1,0 +1,1 @@
+!function(){"use strict";document.addEventListener("DOMContentLoaded",(function(){const e=document.querySelector(".hamburger"),t=document.querySelector(".responsive-sidebar");e.addEventListener("click",(()=>{t.classList.toggle("responsive-sidebar-toggle"),e.classList.toggle("hamburger-animation")}))}))}();
