@@ -1,5 +1,5 @@
-@import "./utility/_navbar.scss";
-@import "./utility/_reset.scss";
+@use "./utility/_navbar.scss";
+@use "./utility/_reset.scss";
 
 #main-section {
     .about-img {
@@ -724,7 +724,172 @@ footer {
 
 @media (max-width: 580px) {
     #main-section {
+<<<<<<< HEAD
         about-img {
+=======
+        .about-img {
+            width: 520px !important;
+            height: 460px;
+        }
+
+        h1 {
+            font-size: 45px;
+            top: 220px;
+        }
+
+        h6 {
+            top: 195px;
+        }
+
+        h6, h1 {
+            left: 8vw;
+        }
+    }
+
+    #partnership {
+        .text-container {
+            h1 {
+                font-size: 30px !important;
+            }
+
+            li {
+                margin-top: -2px !important;
+                margin-left: 3px !important;
+                font-size: 13.5px !important;
+            }
+        }
+    }
+
+    #philosophy {
+        .text-container {
+            margin-top: -150px !important;
+
+            h1 {
+                font-size: 35px;
+            }
+        }
+    }
+
+    footer {
+        h1 {
+            font-size: 30px !important;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    #partnership {
+        .text-container {
+            li {
+                font-size: 13px !important;
+            }
+        }
+    }
+
+    #information {
+        h1 {
+            font-size: 35px;
+        }
+
+        h2 {
+            font-size: 18px !important;
+        }
+
+        p {
+            font-size: 14px !important;
+        }
+
+        .flex-container {
+            p {
+                font-size: 14px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #partnership {
+        .text-container {
+            top: 540px;
+        }
+    }
+}
+
+@media (max-width: 690px) {
+    #main-section {
+        .about-img {
+            width: 550px !important;
+            height: 500px;
+        }
+
+        h1 {
+            font-size: 50px;
+            width: 80vw;
+            top: 270px;
+        }
+
+        h6 {
+            top: 255px;
+        }
+
+        h6, h1 {
+            left: 8vw;
+        }
+    }
+
+    #partnership {
+        .text-container {
+            top: 560px;
+
+            h6 {
+                font-size: 13px !important;
+            }
+
+            h1 {
+                font-size: 40px !important;
+            }
+
+            p {
+                font-size: 16px !important;
+            }
+        }
+    }
+
+    #partnership {
+        .partnership-img, .overlay-div2, .banner {
+            top: 850px !important;
+        }
+    }
+
+    #information {
+        top: calc(600px + 770px);
+    }
+
+    #philosophy {
+        top: calc(600px + 990px + 820px);
+
+        .text-container {
+            margin-top: -125px !important;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    #partnership {
+        .text-container {
+            margin-left: -10px !important;
+
+            ul li {
+                margin-left: 12px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    #main-section {
+        .about-img {
+>>>>>>> 7dd6d536c3eff57b014355bb0cedc48cb6ba8d9c
             width: 520px !important;
             height: 460px;
         }
