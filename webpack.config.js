@@ -20,9 +20,11 @@ module.exports = {
     output: {
         filename: mode === "production" ? 'js/[name].[contenthash].chunk.js' : 'js/[name].js',
         path: path.resolve(__dirname, './build'),
+        publicPath: '/urban-projects-ser/',  // Ensures correct asset loading from subdirectory
         clean: true,
         assetModuleFilename: 'assets/[contenthash][ext]'
     },
+    
 
     module: {
         rules: [
