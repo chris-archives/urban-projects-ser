@@ -1,2 +1,112 @@
 @import "./utility/_navbar.scss";
 @import "./utility/_reset.scss";
+
+#main-section {
+    height: 600px;
+    background-color: #302c2d;
+
+    img {
+        object-fit: cover !important;
+        position: absolute;
+        height: 600px;
+        width: 950px;
+        left: 0;
+        top: 0;
+        z-index: 2;
+    }
+
+    .overlay-div {
+        position: absolute;
+        height: 600px;
+        width: 950px;
+        left: 0;
+        top: 0;
+        z-index: 3;
+        opacity: 0.7;
+        background-color: #302c2d;
+    }
+
+    h1 {
+        font-size: 67px;
+        font-family: 'Inter';
+        line-height: 1.3em;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: left;
+        width: 78vw;
+        position: absolute;
+        left: 12vw;
+        top: 375px;
+        z-index: 4;
+    }
+
+    h6 {
+        position: absolute;
+        left: 12vw;
+        white-space: pre-line;
+        text-overflow: clip;
+        font-family: 'Inter';
+        line-height: 1.4em;
+        font-weight: 300;
+        font-size: 13px;
+        text-transform: none;
+        color: #fff;
+        text-align: left;
+        top: 360px;
+        z-index: 4;
+    }
+}
+
+#apply {
+    .banner {
+        width: 100vw;
+        object-fit: cover;
+        height: 145px;
+    }
+
+    .text-container {
+        margin-top: 100px;
+        width: 45vw;
+
+        h6 {
+            position: relative;
+            white-space: pre-line;
+            text-overflow: clip;
+            font-family: 'Inter';
+            line-height: 1.4em;
+            font-weight: 300;
+            font-size: 13px;
+            text-transform: none;
+            color: #000;
+            text-align: left;
+            left: 10vw;
+        }
+    
+        h1 {
+            font-size: 42px;
+            font-family: 'Inter';
+            line-height: 1.3em;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #000;
+            text-align: left;
+            position: relative;
+            left: 10vw;
+        }
+    
+        p {
+            position: relative;
+            text-transform: none;
+            white-space: pre-line;
+            font-family: 'Inter';
+            line-height: 1.4em;
+            font-weight: 300;
+            font-size: 16px;
+            color: #000;
+            left: 10vw;
+            margin-bottom: 35px;
+        }
+    }
+}
+
