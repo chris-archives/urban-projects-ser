@@ -212,7 +212,7 @@ top: 1320px;
 
             .back {
                 transform: rotateY(180deg);
-                background: rgba(157, 193, 131, 0.95);
+                background: rgba(255, 219, 187, 0.95);
                 text-transform: none;
                 white-space: pre-line;
                 font-family: 'Inter';
@@ -314,17 +314,19 @@ top: 1320px;
             width: 85vw;
             left: 0px;
             top: 900px;
+            height: 550px;
         }
 
         .banner {
             width: 15vw;
             right: 0px;
             top: 900px;
+            height: 550px;
         }
     }
 
     #team-display {
-        top: 1600px !important;
+        top: 1500px !important;
 
         .team-display-text {
             width: 90vw !important;
@@ -366,7 +368,7 @@ top: 1320px;
     }
 
     #team-display {
-        top: 1520px !important;
+        top: 1420px !important;
     }
 }
 
@@ -403,7 +405,7 @@ top: 1320px;
     }
 
     #team-display {
-        top: 1450px !important;
+        top: 1350px !important;
 
         h1 {
             font-size: 30px;
@@ -426,4 +428,3 @@ top: 1320px;
         }
     }
 }
-

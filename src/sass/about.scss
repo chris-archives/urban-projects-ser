@@ -1,5 +1,5 @@
-@use "./utility/_navbar.scss";
-@use "./utility/_reset.scss";
+@import "./utility/_navbar.scss";
+@import "./utility/_reset.scss";
 
 #main-section {
     .about-img {
@@ -215,7 +215,7 @@
             line-height: 1.3em;
             font-weight: 700;
             font-size: 24px;
-            color: #feb693;
+            color: #fe9f57;
         }
 
         p {
@@ -227,7 +227,7 @@
 
         .ri-crosshair-line, .ri-basketball-fill, .ri-money-dollar-circle-line {
             font-size: 40px;
-            color: #feb693;
+            color: #fe9f57;
         }
     }
 }
@@ -309,8 +309,8 @@
             font-family: 'Inter';
             display: inline-block;
             color: white;
-            border: 2px solid rgb(149, 0, 255);
-            background: rgb(149, 0, 255);
+            border: 2px solid rgb(255, 69, 0);
+            background: rgb(255, 69, 0);
             padding: 12px 40px;
             line-height: 1.4;
             font-size: 16px;
@@ -328,7 +328,7 @@
         }
         button:hover {
             background: transparent;
-            border: 2px solid rgb(149, 0, 255);
+            border: 2px solid rgb(255, 69, 0);
 
             a {
                 color: #000;
@@ -381,7 +381,7 @@ footer {
             font-family: 'Inter';
             display: inline-block;
             border: none;
-            background: rgba(13, 232, 5, 0.705);
+            background: rgb(6, 64, 43);
             padding: 12px 40px;
             line-height: 1.4;
             font-size: 16px;
@@ -518,7 +518,6 @@ footer {
 
             .ri-crosshair-line, .ri-basketball-fill, .ri-money-dollar-circle-line {
                 font-size: 35px;
-                color: rgb(219, 255, 0);
             }
         }
     }
@@ -652,167 +651,6 @@ footer {
 }
 
 @media (max-width: 690px ) {
-    #main-section {
-        .about-img {
-            width: 550px !important;
-            height: 500px;
-        }
-
-        h1 {
-            font-size: 50px;
-            width: 80vw;
-            top: 270px;
-        }
-
-        h6 {
-            top: 255px;
-        }
-
-        h6, h1 {
-            left: 8vw;
-        }
-    }
-
-    #partnership {
-        .text-container {
-            top: 560px;
-
-            h6 {
-                font-size: 13px !important;
-            }
-
-            h1 {
-                font-size: 40px !important;
-            }
-
-            p {
-                font-size: 16px !important;
-            }
-        }
-    }
-
-    #partnership {
-        .partnership-img, .overlay-div2, .banner {
-            top: 850px !important;
-        }
-    }
-
-    #information {
-        top: calc(600px + 770px);
-    }
-
-    #philosophy {
-        top: calc(600px + 990px + 820px);
-
-        .text-container {
-            margin-top: -125px !important;
-        }
-    }
-}
-
-@media (max-width: 620px) {
-    #partnership {
-        .text-container {
-            margin-left: -10px !important;
-
-            ul li {
-                margin-left: 12px !important;
-            }
-        }
-    }
-}
-
-@media (max-width: 580px) {
-    #main-section {
-        .about-img {
-            width: 520px !important;
-            height: 460px;
-        }
-
-        h1 {
-            font-size: 45px;
-            top: 220px;
-        }
-
-        h6 {
-            top: 195px;
-        }
-
-        h6, h1 {
-            left: 8vw;
-        }
-    }
-
-    #partnership {
-        .text-container {
-            h1 {
-                font-size: 30px !important;
-            }
-
-            li {
-                margin-top: -2px !important;
-                margin-left: 3px !important;
-                font-size: 13.5px !important;
-            }
-        }
-    }
-
-    #philosophy {
-        .text-container {
-            margin-top: -150px !important;
-
-            h1 {
-                font-size: 35px;
-            }
-        }
-    }
-
-    footer {
-        h1 {
-            font-size: 30px !important;
-        }
-    }
-}
-
-@media (max-width: 500px) {
-    #partnership {
-        .text-container {
-            li {
-                font-size: 13px !important;
-            }
-        }
-    }
-
-    #information {
-        h1 {
-            font-size: 35px;
-        }
-
-        h2 {
-            font-size: 18px !important;
-        }
-
-        p {
-            font-size: 14px !important;
-        }
-
-        .flex-container {
-            p {
-                font-size: 14px !important;
-            }
-        }
-    }
-}
-
-@media (max-width: 450px) {
-    #partnership {
-        .text-container {
-            top: 540px;
-        }
-    }
-}
-
-@media (max-width: 690px) {
     #main-section {
         .about-img {
             width: 550px !important;

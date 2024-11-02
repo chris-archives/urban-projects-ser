@@ -212,8 +212,8 @@
             font-family: Inter;
             display: inline-block;
             color: white;
-            border: 2px solid rgb(149, 0, 255);
-            background: rgb(149, 0, 255);
+            border: 2px solid rgb(255, 69, 0);
+            background: rgb(255, 69, 0);
             padding: 12px 40px;
             line-height: 1.4;
             font-size: 16px;
@@ -233,7 +233,7 @@
     }
     button:hover {
         background: transparent;
-        border: 2px solid rgb(149, 0, 255);
+        border: 2px solid rgb(255, 69, 0);
         transform: translateX(10px);
     }
 
@@ -625,8 +625,8 @@ footer {
 
     .our-focus-img {
         position: absolute !important;
-        height: 800px !important;;
-        width: 75vw !important;;
+        height: 680px !important;;
+        width: 85vw !important;;
         object-fit: cover !important;;
         opacity: 0.9 !important;;
         left: 0px !important;
@@ -635,22 +635,22 @@ footer {
 
     .overlay-div2 {
         position: absolute !important;
-        height: 800px !important;;
-        width: 75vw !important;;
+        height: 680px !important;;
+        width: 85vw !important;;
         left: 0px !important;
         top: 0px !important;
     }
     
     .banner2 {
-        width: 25vw !important;
-        height: 800px !important;
-        left: 75vw !important;
+        width: 15vw !important;
+        height: 680px !important;
+        left: 85vw !important;
         top: 0px !important;
     }
 
     #our-impact {
         img, .overlay-div3, .banner3 {
-            top: 2250px;
+            top: 2130px;
         }
 
         h6, h1, p {
@@ -667,7 +667,7 @@ footer {
 
         ul {
             left: 30vw;
-            top: 2750px;
+            top: 2630px;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -679,7 +679,7 @@ footer {
 
     #our-mission {
         img, .overlay-div4, .text-container  {
-            top: 1070px;
+            top: 950px;
         }
 
         h6 {
@@ -688,7 +688,7 @@ footer {
     }
 
     footer {
-        top: 3590px;
+        top: 3470px;
     }
 }
 
@@ -766,7 +766,7 @@ footer {
         }
 
         ul {
-            top: 2770px;
+            top: 2650px;
             left: 20vw;
         }
     }
@@ -837,4 +837,3 @@ footer {
         }
     }
 }
-
