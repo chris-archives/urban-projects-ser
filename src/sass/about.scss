@@ -1,5 +1,5 @@
-@import "./utility/_navbar.scss";
-@import "./utility/_reset.scss";
+@use "./utility/_navbar.scss";
+@use "./utility/_reset.scss";
 
 #main-section {
     .about-img {
@@ -214,7 +214,7 @@
             font-family: 'Inter';
             line-height: 1.3em;
             font-weight: 700;
-            font-size: 24px;
+            font-size: 26.5px;
             color: #fe9f57;
         }
 

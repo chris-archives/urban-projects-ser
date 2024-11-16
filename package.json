@@ -5,7 +5,7 @@
   "scripts": {
     "start": "webpack serve --open",
     "build": "NODE_ENV=production webpack",
-    "deploy": "NODE_ENV=production webpack && gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",

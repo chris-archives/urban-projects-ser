@@ -1,5 +1,5 @@
-@import "./utility/_navbar.scss";
-@import "./utility/_reset.scss";
+@use "./utility/_navbar.scss";
+@use "./utility/_reset.scss";
 
 #main-section {
     height: 680px;
@@ -667,7 +667,7 @@ footer {
 
         ul {
             left: 30vw;
-            top: 2630px;
+            top: 2650px;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -766,7 +766,7 @@ footer {
         }
 
         ul {
-            top: 2650px;
+            top: 2680px;
             left: 20vw;
         }
     }
