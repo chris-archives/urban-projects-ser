@@ -36,9 +36,7 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               postcssOptions: {
-                plugins: [
-                  ['postcss-preset-env'],
-                ],
+                plugins: [['postcss-preset-env']],
               },
             },
           },
@@ -59,9 +57,7 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               postcssOptions: {
-                plugins: [
-                  ['postcss-preset-env'],
-                ],
+                plugins: [['postcss-preset-env']],
               },
             },
           },
@@ -72,9 +68,7 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-          },
+          options: { presets: ['@babel/preset-env'] },
         },
       },
       {
@@ -108,7 +102,14 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin({
       patterns: [
-        { from: path.resolve(__dirname, 'public'), to: '.' }, // copies all public files to build root
+        {
+          from: path.resolve(__dirname, 'public'),
+          to: '.',
+          noErrorOnMissing: true,
+          globOptions: {
+            ignore: ['**/.*'], // Ignore hidden files like .DS_Store
+          },
+        },
       ],
     }),
 
@@ -142,7 +143,7 @@ module.exports = {
 
   optimization: {
     minimizer: [
-      '...', // extend existing minimizers (like terser)
+      '...', // keep existing minimizers like terser
       new CssMinimizerPlugin(),
     ],
     moduleIds: 'deterministic',
