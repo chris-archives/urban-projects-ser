@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "start": "webpack serve --open",
-    "build": "NODE_ENV=production webpack",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build": "webpack --mode production && node scripts/generate-sitemap.js",    
+    "postbuild": "node scripts/generate-sitemap.js"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
