@@ -100,18 +100,27 @@ module.exports = {
   },
 
   plugins: [
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: path.resolve(__dirname, 'public'),
-          to: '.',
-          noErrorOnMissing: true,
-          globOptions: {
-            ignore: ['**/.*'], // Ignore hidden files like .DS_Store
-          },
+// Replace your existing CopyWebpackPlugin configuration with this:
+new CopyWebpackPlugin({
+    patterns: [
+      {
+        from: path.resolve(__dirname, 'public/sitemap.xml'),
+        to: 'sitemap.xml',
+      },
+      {
+        from: path.resolve(__dirname, 'public/robots.txt'),
+        to: 'robots.txt',
+      },
+      {
+        from: path.resolve(__dirname, 'public'),
+        to: '.',
+        noErrorOnMissing: true,
+        globOptions: {
+          ignore: ['**/.*', '**/sitemap.xml', '**/robots.txt'], // Avoid duplicates
         },
-      ],
-    }),
+      },
+    ],
+  }),
 
     new HtmlWebpackPlugin({
       template: './src/index.html',
