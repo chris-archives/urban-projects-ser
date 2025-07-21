@@ -1,18 +1,15 @@
 {
-    "buildCommand": "npm run build",
-    "outputDirectory": "build",
-    "routes": [
-      {
-        "src": "/robots.txt",
-        "dest": "/robots.txt"
-      },
-      {
-        "src": "/sitemap.xml",
-        "dest": "/sitemap.xml"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/index.html"
-      }
-    ]
-  }
+  "version": 2,
+  "builds": [
+    {
+      "src": "build/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
